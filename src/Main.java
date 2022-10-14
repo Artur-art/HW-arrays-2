@@ -26,48 +26,50 @@ public class Main {
         int maxSpending = -1;
         for (int i = 0; i < array.length; i++) {
             if(array[i] > maxSpending){
-                final int current = array[i];
-                if (current > maxSpending){
-                    maxSpending = current;
+                int current = array[i];
+                maxSpending = current;
+
                 }
             }
+        System.out.println("Максимальная сумма трат за день составила " + maxSpending + " рублей");
 
-        }
-        System.out.println("Максимальная сумма трат за день составила " + maxSpending + "рублей");
-        int minSpending = 200000;
+        int minspending = 200000;
         for (int i = 0; i < array.length; i++) {
-            if(array[i] < minSpending){
-                final int current = array[i];
-                if (current < minSpending){
-                    minSpending = current;
-                }
+            if (array[i] < minspending){
+                minspending = array[i];
+
             }
 
         }
-        System.out.println("Минимальная сумма трат за день составила " + minSpending + " рублей.");
+        System.out.println("минимальная сумма трат за день составила " + minspending +" рублей");
         System.out.println("Задача №3");
         int averageSpending = summOfSpending;
-        for (int i = 0; i < array.length; i++) {
-            averageSpending = summOfSpending / array.length;
-
-        }
+        averageSpending = summOfSpending / array.length;
         System.out.println("Средняя сумма трат за месяц составила " + averageSpending + " рублей");
+
         System.out.println("Задача №4");
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length - 1; i >= 0; i--) {
-
-            System.out.print(reverseFullName[i]);
-
-        }
-
-
-        }
+            for (int i = reverseFullName.length - 1; i >= 0; i--){
+                System.out.print(reverseFullName[i]);
+            }
+    }
 
 
 
+            }
 
 
-        }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
